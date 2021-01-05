@@ -1,9 +1,20 @@
-// *************************** YOUR CODE BELOW *******************************
-//******************TEST EARLY AND OFTEN USING console.log() ******************
-//****************** SERIOUSLY TEST USING console.log()!!! ******************
+$("#shoot").click(function(){
+  let choice = $("#input").val();
+  $("#userChoice").text(choice);
+  $("#computerChoice").text(computerChoice());
+});
 
-//GLOBAL VARIABLES
-/* global $ */
+function computerChoice() {
+  let i = Math.floor(Math.random() * 3);
+  let choices = ["rock", "paper", "scissors"];
+  return choices[i];
+  
+}
+
+
+
+
+
 
 
 
