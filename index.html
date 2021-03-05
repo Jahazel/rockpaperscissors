@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RPS Game</title>
+    <title>Tic Tac Toe Project</title>
     <!-- Link CSS here -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <header>
-      <div class="header-container">
-        <div class="title">
-          <h1>rock<br />paper<br />scissors<br /></h1>
-        </div>
-        <div class="round">
-          <p>
-            round:
-          </p>
-          <div id="round-board">
-            <span id="round">0</span>
-          </div>
-        </div>
+    <div class="container">
+      <div class="header">
+        <h1>Tic Tac Toe</h1>
       </div>
-    </header>
-    <div class="submit">
-      <div class="submit-container">
-        <h3>Please Submit Your Choice Below</h3>
-        <input class="input" id="input" placeholder="rock, paper, scissors" />
-        <button id="shoot" class="button">Shoot!</button>
-        <button id="refresh" class="button">Refresh</button>
-      </div>
-    </div>
-    <div class="picture">
-      <img
-        src="https://cdn.glitch.com/6b8efd10-c874-4236-8fbc-0848e1dfdc0d%2Frps.png?v=1610418877382"
-      />
-    </div>
 
-    <div class="row">
-      <div>
-        <h4>User Choice</h4>
-        <p id="userChoice" class="choice"></p>
+      <div class="game">
+        <div id="tile1" class="tile right bottom center">
+          <button class="button" id="button1">Tile 1</button>
+          <span id="t1"></span>
+        </div>
+        <div id="tile2" class="tile right bottom center">
+          <button class="button" id="button2">Tile 2</button>
+          <span id="t2"></span>
+        </div>
+        <div id="tile3" class="tile bottom center">
+          <button class="button" id="button3">Tile 3</button>
+          <span id="t3"></span>
+        </div>
+        <div id="tile4" class="tile right bottom center">
+          <button class="button" id="button4">Tile 4</button>
+          <span id="t4"></span>
+        </div>
+        <div id="tile5" class="tile right bottom center">
+          <button class="button" id="button5">Tile 5</button>
+          <span id="t5"></span>
+        </div>
+        <div id="tile6" class="tile bottom center">
+          <button class="button" id="button6">Tile 6</button>
+          <span id="t6"></span>
+        </div>
+        <div id="tile7" class="tile right center">
+          <button class="button" id="button7">Tile 7</button>
+          <span id="t7"></span>
+        </div>
+        <div id="tile8" class="tile right center">
+          <button class="button" id="button8">Tile 8</button>
+          <span id="t8"></span>
+        </div>
+        <div id="tile9" class="tile center">
+          <button class="button" id="button9">Tile 9</button>
+          <span id="t9"></span>
+        </div>
       </div>
-      <div>
-        <h4>Computer Choice</h4>
-        <p id="computerChoice" class="choice"></p>
+      <div id="result"></div>
+      <div class="reset-container">
+        <button id="reset">Reset</button>
       </div>
     </div>
-    <div class="result-container">
-      <h3 id="result"></h3>
-    </div>
-
     <!-- Link JQuery here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <!-- Link script.js here -->
     <script src="js/script.js"></script>
   </body>

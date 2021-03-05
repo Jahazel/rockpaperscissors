@@ -1,73 +1,55 @@
-# Rock Paper Scissors Project
+# Tic-Tac-Toe Project
 
 ## Overview:
-
-In this unit, coders will create a Rock, Paper, Scissors game. To create this project, coders will use JavaScript to take user input, use the Math Library to pick a random computer choice, and use conditionals to determine the winner.
+In this unit, coders will create the classic game of tic tac toe in their browser! The user will input moves as player X or O on a tic tac toe board. When a player wins, the game will end and a message will display the winner.
 
 ## Day 1
 
 #### Planning
-
-- [ ] Copy the [project planning document](https://docs.google.com/document/d/1CCzFGH6Z4AtpWrDuB6KQK73N5-8ywGv0KhO10i3hZPk/edit#) and link a completed version in your ReadMe.
-
+- [ ] Complete the project planning document.
 #### Set-Up
-
-- [x] Go to the repository at https://github.com/itscodenation/rockpaperscissors
-- [x] Fork this repository to your Github account and pull it down to Glitch
-- [x] Look through all the Starter Code
+- [x] Go to the repository
+- [x] Fork this repository to your github account and import into a new Glitch project
+- [ ] Make your site live on gh-pages
+- [x] Submit your website using the link on the Agenda
 
 ### JavaScript
-
-- [ ] Use JavaScript to display the value of the input on the page
-
-### HTML and CSS
-
-- [ ] Add any more HTML elements you will need to the page
-- [ ] Customize your HTML with CSS
+- [ ] Declare a variable that keeps track of the current player and set it equal to either a string of "X" or "O"
+- [ ] Declare a variable that keeps track of the total number of turns taken and set it equal to 0
+- [ ] Declare a variable of a boolean type that will signal whether or not the game has ended and set it equal to false
+- [ ] Declare a function called with two parameters that removes the button of the corresponding ID, and changes the text of the div that is the tileId to the player variable.
+- [ ] Declare a function with 0 parameters that will change the current player to either "X" or "O" depending on the current player. Decide where to call this function.
 
 #### Wrap
-
 - [ ] Save and submit your website using the link on the session agenda.
 
 ## Day 2
 
-### Javascript
-
-- [ ] Outside of your click handler, declare the variables you'll need to track the user choice, computer choice and winner and assign them values of empty strings.
-- [ ] Outside of your click handler, declare a randomNumber variable and set it equal to 0
-- [ ] When the user initiates the game, generate a random number and assign it to the randomNumber variable.
-- [ ] When the user initiates the game, store the user choice.
-- [ ] When the user initiates the game, display user choice to the screen.
-
-#### Wrap
-
-- [ ] Save and submit your website using the link on the session agenda.
+### JavaScript
+- [ ] Declare a function with 3 parameters of the tileIds, and return if the value of the each of the tileIds are equal to the current player. This function will check if the player has won.
+- [ ] Declare a function that will call the function above on all of the vertical combinations of tiles.
+- [ ] Declare a function that will call the function above on all of the horizontal combinations of tiles
+- [ ] Declare a function checkDiagonalWins that will call the function above on all of the diagonal combinations
 
 ## Day 3
 
-## JavaScript
-
-- [ ] Write a conditional statement which, given the number range of randomNumber, assigns ‘rock’, ‘paper’ or ‘scissors’ to the variable that holds the computer choice.
-- [ ] Display the computer choice to the screen.
-- [ ] Write conditional statements that compare the user choice to the computer choice to determine the winner of the game.
-- [ ] Display the winner to the screen.
-- [ ] Clear the input value once a result is displayed.
+### JavaScript
+- [ ] Implement behavior that will change the title to "It's a draw!" and end the game by changing the boolean variable to true after 9 pieces are placed. Do this by writing a function that will add 1 to the current turns, and check if that counter has reached 9.
+- [ ] In each of the win functions, if the win condition is satisfied, set the end game variable to true, and change the title to "[Player] Wins!"
+- [ ] Update your functions to check if the game has ended first before placing a piece.
+- [ ] Determine the appropriate location to place the Win functions
 
 #### Wrap
+- [ ] Push your changes!
 
-- [ ] Save and submit your website using the link on the session agenda.
-
-## Projects Extensions:
-
-- [ ] Style your page to fit the developer's personality
-- [ ] Validate the input so that it will return “Not valid input” if the user types in a wrong choice.
-- [ ] Accept any form of a word regardless of capitalization (i.e. “Rock” “rock” roCk”)
-- [ ] Keep track of total wins and losses, until the page refreshes.
-- [ ] Allow for more variety in throwing options. Example: [Rock-Paper-Scissors-Lizard-Spock](http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock)
+## Project Extensions:
+- [ ] Add in your own css to personalize your project
+- [ ] Create a button that will reset the game back to the original (this requires clearing the Xs and Os, and putting the "move" buttons back)
+- [ ] Keep track of the score between the two players: X wins, O wins, and draws
+- [ ] Change the 9 button functions to instead be one generic function on the button selector
+- [ ] Change the board to be 4x4 and end the game when there is a 4 in a row
 
 ## References/Tools
-
-- [Fellowship Reference Table](https://docs.google.com/document/d/1qrY2OC-6S04oOXZlYmXja7lmKBmdApR-HXJkhfd67e8/)
-- [How Jquery Works](http://learn.jquery.com/about-jquery/how-jquery-works/)
-- [JQuery Events](http://api.jquery.com/category/events/)
-- [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+* [Advanced Reference Table](https://docs.google.com/document/d/1SElvLDvtVOoYZJyR5XbCQJWbSTxyChDiQkz7n3c63Go/preview)
+* [How Jquery Works](http://learn.jquery.com/about-jquery/how-jquery-works/)
+* [JQuery Events](http://api.jquery.com/category/events/)
